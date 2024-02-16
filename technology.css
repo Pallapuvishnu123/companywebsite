@@ -1,0 +1,625 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+.menu_bar {
+    background-color: rgb(53, 54, 54);
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    color: white;
+    font-size: 24px; 
+}
+
+.logo span {
+    color: rgb(120, 120, 222);
+	margin: 0 auto;
+  	text-shadow: 0 0 80px rgba(120, 120, 222);
+}
+.logo{
+
+    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+      /* Animate Background Image */
+
+	  -webkit-text-fill-color:transparent;
+	  -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+	  -webkit-transform: translate3d(0,0,0);
+	  -webkit-backface-visibility: hidden;
+
+}
+
+
+/* Animate Background Image */
+
+    @-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+
+.menu_bar ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu_bar ul li {
+    padding: 10px;
+    position: relative;
+}
+
+.menu_bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+
+.menu_bar ul li a:hover {
+    color: rgb(82, 82, 136);
+}
+
+.dropdown_menu {
+    display: none;
+}
+
+.menu_bar ul li:hover .dropdown_menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: rgb(53, 54, 54);
+}
+
+.dropdown_menu ul {
+    display: block;
+    margin: 10px;
+}
+
+.dropdown_menu ul li {
+    width: 150px;
+    padding: 8px;
+}
+
+.fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+.dropdown_menu-1,
+.dropdown_menu-2,
+.dropdown_menu-3 {
+    display: none;
+}
+
+
+/* ---------------------------responsive code for nav bar section------------------------------------ */
+
+@media screen and (max-width: 480px) {
+    .menu_bar {
+        padding: 0 3%;
+    }
+    .logo {
+        font-size: 20px;
+    }
+    .menu_bar ul li {
+        padding: 8px;
+    }
+    .menu_bar ul li a {
+        font-size: 14px;
+    }
+    .dropdown_menu ul li {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+    .menu_bar ul li {
+        padding: 10px 15px;
+    }
+    .menu_bar ul li a {
+        font-size: 18px;
+    }
+    .dropdown_menu ul li {
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .menu_bar ul li {
+        padding: 10px 30px;
+    }
+    .menu_bar ul li a {
+        font-size: 20px;
+    }
+}
+
+
+/* main Section */
+
+
+/* main Section End */
+
+.main-section {
+    width: 100%;
+    height: 60vh;
+    background-image: url('./images/technology\ bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: row;
+}
+
+.image1 {
+    height: 100%;
+    width: auto;
+}
+
+
+/* home Section */
+
+.image {
+    width: 30%;
+    height: 100%;
+    /* border: 1px solid white; */
+    display: flex;
+    /* align-items: end; */
+    justify-content: flex-end;
+}
+
+.home-deatils {
+    height: auto;
+    width: 60%;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-deatils h3 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.home-deatils p {
+    text-align: center;
+    width: 100%;
+}
+
+.fullform {
+    font-size: 1rem;
+    font-weight: 800;
+    padding-top: 15px;
+}
+
+
+/* Media query for smaller screens */
+
+@media (max-width: 768px) {
+    .main-section {
+        height: auto;
+    }
+    .image {
+        width: 100%;
+        justify-content: flex-end;
+        height: 250px;
+        margin-top: 40px;
+    }
+    .home-deatils {
+        width: 100%;
+        padding: 10px;
+        height: auto;
+    }
+    .home-deatils h3 {
+        font-size: 2em;
+    }
+    .fullform {
+        font-size: 0.8em;
+        padding-top: 10px;
+    }
+}
+
+
+/* ----------------------------Technology section--------------------- */
+
+.technology-section {
+    height: 70vh;
+    width: 100%;
+    border-radius: 10px;
+    background-color: aliceblue;
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.languages {
+    height: 90%;
+    width: 60%;
+    border-radius: 10px;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.vehicle,
+.webdev,
+.ai,
+.embedded {
+    height: 40%;
+    width: 40%;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px rgb(27, 26, 26);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid; */
+    flex-wrap: nowrap;
+}
+
+.info {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.image-info {
+    width: 20%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image2 {
+    height: 100px;
+    width: 100px;
+    background: rgb(48, 206, 48);
+    border-radius: 50%;
+}
+
+.info-word {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(128, 0, 128, 0.834);
+    text-shadow: 0px 0px 1px #525151;
+    padding-left: 4px;
+}
+
+.info-title {
+    font-size: 27px;
+    font-weight: bolder;
+    padding-left: 5px;
+}
+
+.fa-chevron-right {
+    color: rgb(234, 86, 86);
+    font-weight: bolder;
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+.linkage {
+    text-decoration: none;
+    color: rgb(112, 69, 16);
+    font-weight: bolder;
+    padding-left: 5px;
+}
+
+.infohead {
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.information {
+    height: 90%;
+    width: 35%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    padding: 10px;
+    background-color: rgb(236, 248, 248);
+}
+
+.information p {
+    color: rgb(40, 40, 41);
+    padding-top: 20px;
+}
+
+
+/* ----------------------------footer section--------------------- */
+.footer {
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-column {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    color: #ffcc00;
+}
+/* ---------------------------responsive code for Footer section------------------------------------ */
+@media screen and (max-width: 768px) {
+    .footer-column {
+        width: 100%;
+    }
+}
+
+.license-section {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.social-media a {
+    display: inline-flex;
+    width:35px;
+    height: 35px;
+    border-radius: 50%;
+    color: #d1d9db;
+    font-size: 30px;
+    border: 2px solid #d9d9d9;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    transition: .5s ease;
+}
+
+.social-media a:hover,
+.social-media a.active {
+    background: #6a6a687a;
+    color: #000;
+    box-shadow: 0 0 20px #c6cbcd;
+}
+
+
+/* ---------------------------animation code for Footer section------------------------------------ */
+.footer-column {
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-column:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+/* -------------------------------------responsive code for technologies--------------------------------------- */
+
+
+/* technology section media queries start */
+
+
+/* 300px to 600px */
+
+@media screen and (min-width:300px) and (max-width:600px) {
+    .technology-section {
+        height: 240vh;
+        width: 100%;
+        border-radius: 10px;
+        background-color: aliceblue;
+        /* border: 1px solid; */
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .languages {
+        height: 50%;
+        width: 100%;
+        border-radius: 10px;
+        /* border: 1px solid; */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        /* gap: 10px; */
+        justify-content: space-around;
+    }
+    .information {
+        height: 50%;
+        width: 100%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        padding: 10px;
+        background-color: rgb(236, 248, 248);
+    }
+    .vehicle,
+    .webdev,
+    .ai,
+    .embedded {
+        height: 33%;
+        width: 40%;
+        background-color: rgb(245, 245, 245);
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 1px rgb(27, 26, 26);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap-reverse;
+        flex-direction: column;
+        /* border: 1px solid; */
+    }
+    .info {
+        width: 90%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: start;
+    }
+    .image-info {
+        width: 20%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+/* 300px to 350px */
+
+@media screen and (min-width:300px) and (max-width:350px) {
+    .info-title {
+        font-size: 20px;
+        font-weight: bolder;
+        padding-left: 5px;
+    }
+    .main-section {
+        width: 100%;
+        height: 80vh;
+        background-image: url('./images/technology\ bg.jpg');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        flex-direction: column;
+    }
+    .image {
+        width: 30%;
+        height: 50%;
+        /* border: 1px solid white; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .image1 {
+        height: 100%;
+        width: auto;
+    }
+    .home-deatils {
+        height: auto;
+        width: 100%;
+        /* border: 2px solid white; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/*  600px to 1375px */
+
+@media screen and (min-width:600px) and (max-width:1375px) {
+    .technology-section {
+        height: 135vh;
+        width: 100%;
+        border-radius: 10px;
+        background-color: aliceblue;
+        /* border: 1px solid; */
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .languages {
+        height: 47%;
+        width: 100%;
+        border-radius: 10px;
+        /* border: 1px solid; */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        /* gap: 10px; */
+        justify-content: space-around;
+    }
+    .information {
+        height: 45%;
+        width: 100%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        padding: 10px;
+        background-color: rgb(236, 248, 248);
+    }
+    .vehicle,
+    .webdev,
+    .ai,
+    .embedded {
+        height: 40%;
+        width: 47%;
+        background-color: rgb(245, 245, 245);
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 1px rgb(27, 26, 26);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        /* border: 1px solid; */
+    }
+    .image-info {
+        width: 30%;
+        height: 90%;
+    }
+    .image2 {
+        height: 100px;
+        width: 100px;
+        background: rgb(48, 206, 48);
+        border-radius: 50%;
+    }
+}
+
+
+/* technology section media queries end */

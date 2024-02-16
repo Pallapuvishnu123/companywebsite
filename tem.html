@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .login-container {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        #student-email,
+        #student-password,
+        #employee-id,
+        #employee-password {
+            display: block;
+            width: 100%;
+        }
+
+        #student-login-btn {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+        }
+
+        #employee-login-btn {
+            background-color: #2196f3;
+            color: #fff;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Login</h2>
+
+    <!-- Student Login Form -->
+    <form id="student-login-form">
+        <input type="email" id="student-email" placeholder="Student Email" required>
+        <input type="password" id="student-password" placeholder="Student Password" required>
+        <button id="student-login-btn" onclick="redirectToStudentLogin()">Student Login</button>
+    </form>
+
+    <!-- Employee Login Form -->
+    <form id="employee-login-form">
+        <input type="text" id="employee-id" placeholder="Employee ID" required>
+        <input type="password" id="employee-password" placeholder="Employee Password" required>
+        <button id="employee-login-btn" onclick="redirectToEmployeeLogin()">Employee Login</button>
+    </form>
+</div>
+
+<script>
+    // Function to handle student login button click
+    function redirectToStudentLogin() {
+        // Add your logic for student login redirection
+        alert("Redirecting to Student Login Page");
+        // Replace the alert with actual redirection code
+    }
+
+    // Function to handle employee login button click
+    function redirectToEmployeeLogin() {
+        // Add your logic for employee login redirection
+        alert("Redirecting to Employee Login Page");
+        // Replace the alert with actual redirection code
+    }
+</script>
+
+</body>
+</html>

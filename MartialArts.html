@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paliyam Enterprise Martial arts</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./MartialArts.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+    .whatsapp{
+        position:fixed;
+        bottom: 7%;
+        text-align:right;
+        left:70%;
+        z-index:99;
+    }
+    .whatsapp img{
+        width:15%;
+        height: 15%;
+    }
+    @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.whatsapp img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp img:hover {
+    animation: bounce 1s infinite;
+}
+</style>
+
+<body>
+    <div class="whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=%20%20+916309505244%20&text=Hi%20Sir,%20Please%20share%20Me%20More%20Details%20about art and fitness"><img src="./images/WhatsApp_icon.png.webp" alt="whatsapp"></a>
+    </div>
+    <header>
+        <div class="head" style="position:fixed; width: 100%; height: 150px;">
+            <button class="btn" type="button"><a href="./Arts&Fitness.html" onclick="goBack()">Back</a></button>
+            <h1 class="tittle">KSD School OF Arts</h1>
+            <p class="tittle1 ">Martial Arts</p>
+        </div>
+    </header>
+    <!-- ----------------------------------head section------------------------------ -->
+
+    <!-- ----------------------------------carousel section------------------------------ -->
+    <section class="carousel">
+        <!-- Bootstrap Carousel -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" style="height:350px; border-radius: 10px; margin-top:160px;">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./images/martial arts carsouel.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/martial arts carsouel2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/martial arts carsouel1.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- ---------------------------about section------------------------------- -->
+
+    <section class="about-section">
+        <h2>About Us</h2>
+        <p>paliyam Enterprise is a leading provider of Bollywood dance classes, offering expert instruction by skilled
+            and passionate instructors. Our diverse class offerings cater to all skill levels, creating a supportive and
+            inclusive environment for individuals of all backgrounds. With a commitment to excellence, we blend
+            traditional and contemporary styles to provide a dynamic and enriching dance experience. Join Paliyam
+            Enterprise to express yourself through the joy and vibrancy of Bollywood dance, fostering self-confidence
+            and cultural appreciation. Experience the magic of dance with our top-notch classes designed for everyone,
+            from beginners to advanced dancers.</p>
+    </section>
+    <!-- ----------------------------------------information section------------------------------ -->
+
+    <section class="information">
+        <h1>Our Programes</h1>
+        <div class="ourprogrames">
+            <div class="info-box">
+                <h3>Ofline MartialArts Classes</h3>
+                <img src="./images/Martial arts logo.jpg" alt="">
+                <p>
+                    Paliyam Enterprise is excited to introduce offline Bollywood dance classes, providing a hands-on
+                    learning experience for our community. Join our expert instructors in our state-of-the-art studio,
+                    where you can receive personalized guidance and connect with fellow dance enthusiasts. Our
+                    structured curriculum ensures a comprehensive learning journey for dancers of all levels. Immerse
+                    yourself in the joy of Bollywood dance with Paliyam Enterprise's engaging and interactive offline
+                    classes.</p>
+            </div>
+            <div class="info-box">
+                <h3>Online MartialArts Classes</h3>
+                <i class='bx bxl-zoom'></i>
+                <p>Paliyam Enterprise is excited to announce the commencement of our online classes, providing an
+                    innovative and interactive learning experience. Our virtual platform ensures seamless communication
+                    and engagement, offering a variety of courses tailored to enhance professional skills. Join us for
+                    expert-led sessions, collaborative discussions, and practical insights that will empower you in your
+                    personal and professional development. Enroll now to elevate your knowledge and stay ahead in
+                    today's dynamic business landscape with Paliyam Enterprise online classes.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- -------------------------timings section-------------------------------- -->
+    <section class="conatact section">
+        <div class="classinformation">
+            <h3>Meet Our Masters</h3>
+            <div class="timings">
+                <div class="card">
+                    <img src="./images/hiphop master1.jpg" alt="Instructor Image" class="instructor-img">
+                    <h4>[Instructor's Name]</h4>
+                    <p>Expertise: Traditional Bollywood Dance</p>
+                    <p>Experience: Over 10 years of teaching and performance</p>
+                </div>
+                <div class="card">
+                    <img src="./images/hiphop master2.jpg" alt="Instructor Image" class="instructor-img">
+                    <h4>[Instructor's Name]</h4>
+                    <p>Expertise: Traditional Bollywood Dance</p>
+                    <p>Experience: Over 10 years of teaching and performance</p>
+                </div>
+                <div class="card">
+                    <img src="./images/hiphop master3.jpg" alt="Instructor Image" class="instructor-img">
+                    <h4>[Instructor's Name]</h4>
+                    <p>Expertise: Traditional Bollywood Dance</p>
+                    <p>Experience: Over 10 years of teaching and performance</p>
+                </div>
+                <div class="card">
+                    <img src="./images/hiphop master3.jpg" alt="Instructor Image" class="instructor-img">
+                    <h4>[Instructor's Name]</h4>
+                    <p>Expertise: Traditional Bollywood Dance</p>
+                    <p>Experience: Over 10 years of teaching and performance</p>
+                </div>
+            </div>
+            <div class="times">
+                <h3>Class Timings</h3>
+                <p>Weekdays: Monday to Friday</p>
+                <p>Morning Session: 10:00 AM - 12:00 PM</p>
+                <p>Evening Session: 6:00 PM - 8:00 PM</p>
+            </div>
+
+        </div>
+    </section>
+    <!-- ----------------------------------------gallery section------------------------- -->
+    <section class="photos">
+        <h2 style="text-align: center;">Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-item"><img src="./images/martial arts gallery.jpg" alt="Image 1"></div>
+            <div class="gallery-item"><img src="./images/martial arts carsouel1.jpg" alt="Image 2"></div>
+            <div class="gallery-item"><img src="./images/martial arts carsouel2.jpg" alt="Image 3"></div>
+            <!-- Add more images as needed -->
+        </div>
+        <div class="gallery-container">
+            <div class="gallery-item"><img src="./images/martial arts gallery4.jpg" alt="Image 1"></div>
+            <div class="gallery-item"><img src="./images/martial arts gallery3.jpg" alt="Image 2"></div>
+        </div>
+
+    </section>
+     <!-- ------------------------------------------Testmonial section--------------------------------- -->
+  <div class="testmonials">
+    <h1 style="text-align: center; color: rgb(234, 174, 63); text-decoration: underline; font-family:Georgia, 'Times New Roman', Times, serif; ">Testimonials</h1>
+    <div class="testimonial-flex-container">
+      <div class="testimonial-box">
+        <img src="./images/user1.jpg" alt="Profile Picture 1" class="testimonial-img">
+        <div class="star-rating">
+          ★★★★★
+        </div>
+        <p class="timestamp">4 Months ago</p>
+        <blockquote>I’ve been practicing yoga for a while now and I can definitely observe noticeable differences in my
+          body – I gained so much flexibility and strength! It’s challenging, but through the clear instructions and
+          consistency of the trainings I can feel great results. Deepraj is very professional and brings a very positive
+          energy to the class and motivates you to put that extra effort. Not just fitness/Dance he's multi talented and
+          I have joined Music classes as well without any prior experience and the journey so far is amazing and with
+          each classes I have gained more confidence in singing and I highly recommend his classes to all people who are
+          really serious in learning any form of arts.</blockquote>
+        <p class="testimonial-name">--Leela</p>
+      </div>
+
+      <div class="testimonial-box">
+        <img src="./images/user3.jpg" alt="Profile Picture 2" class="testimonial-img">
+        <div class="star-rating">
+          ★★★★★
+        </div>
+        <p class="timestamp">2 Months ago</p>
+        <blockquote>Beaylutiful place to learn. Felt so happy and convinced by the way they train and concentrate on
+          each kids..felt genuine too</blockquote>
+        <p class="testimonial-name">--Majunath.k</p>
+      </div>
+
+      <div class="testimonial-box">
+        <img src="./images/user3.jpg" alt="Profile Picture 3" class="testimonial-img">
+        <div class="star-rating">
+          ★★★★★
+        </div>
+        <p class="timestamp">a year ago</p>
+        <p>"Good experience with KSD school of arts. I prefer this school very much. the most beautiful thing about them
+          is they had compensated many classes which i am not able to attend without any extra cost. Thanks to the
+          entire team."</p>
+        <p class="testimonial-name">-- seby l
+        </p>
+      </div>
+
+      <div class="testimonial-box">
+        <img src="./images/user3.jpg" alt="Profile Picture 4" class="testimonial-img">
+        <div class="star-rating">
+          ★★★★★
+        </div>
+        <p class="timestamp">2 years ago</p>
+        <p>"I enrolled my daughter for keyboard and Carnatic singing classes. Mr. Deep Raj is an excellent music
+          teacher. He’s trained in both Carnatic and western music and is also a multi-instrumentalist. He’s
+          enthusiastic, talented, knowledgable, polite and friendly. The recitals are excellent, showcasing all ages and
+          skill levels in a warm and friendly environment. Individual attention is given equally for keyboard lessons as
+          well. My daughter has learned lots of music over the last few months. The school has flexible timings and
+          nominal fees. I highly recommend this music school for learning music or improving your music skills at any
+          level."</p>
+        <p class="testimonial-name">--Marshall Andrews</p>
+      </div>
+    </div>
+  </div>
+    <!-- ----------------------------conatct section--------------------------- -->
+    <section class="contact section">
+        <h2 style="text-align: center;">Conatct us</h2>
+        <div id="contact">
+            <p>For inquiries or assistance, please feel free to contact us:</p>
+            <ul>
+                <li>Email: info@ksdyoga.com</li>
+                <li>Phone:+91-9972690022</li>
+                <li>
+                    <p>#78,Ground Floor,Annaiah Reddy building,<br>10th cross near sree rama Temple, <br>Maruthinagar
+                        main road Madiwala<br>Banglore, Karnataka<br>560068</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="./MartialArts.js"></script>
+</body>
+
+</html>

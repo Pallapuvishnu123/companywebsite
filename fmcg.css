@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+.menu_bar {
+    background-color: rgb(53, 54, 54);
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    color: white;
+    font-size: 24px; 
+}
+/* .name{
+    color:#4CAF50
+} */
+
+.logo span {
+    color: rgb(120, 120, 222);
+	margin: 0 auto;
+  	text-shadow: 0 0 80px rgba(120, 120, 222);
+}
+.logo{
+
+    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+      /* Animate Background Image */
+
+	  -webkit-text-fill-color:transparent;
+	  -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+	  -webkit-transform: translate3d(0,0,0);
+	  -webkit-backface-visibility: hidden;
+
+}
+
+
+/* Animate Background Image */
+
+    @-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+
+
+.menu_bar ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu_bar ul li {
+    padding: 10px;
+    position: relative;
+}
+
+.menu_bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+
+.menu_bar ul li a:hover {
+    color: rgb(82, 82, 136);
+}
+
+.dropdown_menu {
+    display: none;
+}
+
+.menu_bar ul li:hover .dropdown_menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: rgb(53, 54, 54);
+}
+
+.dropdown_menu ul {
+    display: block;
+    margin: 10px;
+}
+
+.dropdown_menu ul li {
+    width: 150px;
+    padding: 8px;
+}
+
+.fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+.dropdown_menu-1,
+.dropdown_menu-2,
+.dropdown_menu-3 {
+    display: none;
+}
+/* ---------------------------responsive code for nav bar section------------------------------------ */
+
+@media screen and (max-width: 480px) {
+    .menu_bar {
+        padding: 0 3%; 
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .menu_bar ul li {
+        padding: 8px; 
+    }
+
+    .menu_bar ul li a {
+        font-size: 14px; 
+    }
+
+    .dropdown_menu ul li {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+    .menu_bar ul li {
+        padding: 10px 15px; 
+    }
+
+    .menu_bar ul li a {
+        font-size: 18px; 
+    }
+
+    .dropdown_menu ul li {
+        width: 150px; 
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .menu_bar ul li {
+        padding: 10px 30px;
+    }
+
+    .menu_bar ul li a {
+        font-size: 20px;
+    }
+}
+
+
+/* -------body section--- */
+.home-deatils {
+    padding: 20px;
+    text-align: center;
+    background-image: url('./images/fmcg\ bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #312e2e;
+    min-height: 400px;
+}
+
+.home-deatils h3 {
+    align-items: center;
+    padding-top: 50px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.fullform {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* responsive code for home section */
+@media (max-width: 768px) {
+    .home-deatils h3 {
+        font-size: 32px;
+    }
+
+    .fullform {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .home-deatils h3 {
+        font-size: 28px;
+    }
+
+    .fullform {
+        font-size: 16px;
+    }
+}
+
+
+/* ----------------------service section------------------ */
+
+.services h1 {
+    text-align: center;
+    font-weight: 900;
+}
+
+.online-retail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.online,
+.Retail {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+    background-color: rgba(200, 194, 194, 0.411);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+/* ---------------------------responsive code for service  section------------------------------------ */
+
+@media (min-width: 576px) {
+    .online,
+    .Retail {
+        width: 48%;
+    }
+}
+
+
+.images {
+    width: 100%; 
+}
+
+.btn {
+    height: 40px; 
+    width: 100px; 
+}
+.services {
+    animation: fadeInUp 1s ease-out;
+}
+.online,
+.Retail {
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: slideIn 1s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* ----------------------Footer section------------------ */
+
+.footer {
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-column {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    color: #ffcc00;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-column {
+        width: 100%;
+    }
+}
+
+.license-section {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.social-media a {
+    display: inline-flex;
+    width:35px;
+    height: 35px;
+    border-radius: 50%;
+    color: #d1d9db;
+    font-size: 30px;
+    border: 2px solid #d9d9d9;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    transition: .5s ease;
+}
+
+.social-media a:hover,
+.social-media a.active {
+    background: #6a6a687a;
+    color: #000;
+    box-shadow: 0 0 20px #c6cbcd;
+}
+/* ---------------------------animation code for Footer section------------------------------------ */
+.footer-column {
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-column:hover {
+    transform: scale(1.05);
+}
+
+
+/* -------------------------service section continue------------------------ */
+
+.images {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.images:hover {
+    transform: scale(1.1);
+}
+
+.chocolate-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.child1,
+.child2,
+.child3 {
+    height: 32%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.child_chocolate {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn_child1 {
+    height: 30px;
+    width: 80px;
+    border: 3px solid;
+    border-radius: 10px;
+    background: rgb(80, 204, 80);
+    color: white;
+}
+
+.online-retail_title {
+    font-size: 30px;
+    font-weight: bold;
+}
+/* ---------------------------animation code for Footer section------------------------------------ */
+.footer-column {
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-column:hover {
+    transform: scale(1.05);
+}

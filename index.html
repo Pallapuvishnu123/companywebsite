@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paliyam Enterprises</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  /> -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .whatsapp {
+        position: fixed;
+        bottom: 7%;
+        text-align: right;
+        left: 70%;
+        z-index: 99;
+    }
+
+    .whatsapp img {
+        width: 15%;
+        height: 15%;
+    }
+
+    @keyframes bounce {
+
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+            transform: translateY(0);
+        }
+
+        40% {
+            transform: translateY(-20px);
+        }
+
+        60% {
+            transform: translateY(-10px);
+        }
+    }
+
+    .whatsapp img {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .whatsapp img:hover {
+        animation: bounce 1s infinite;
+    }
+</style>
+
+<body>
+    <div class="whatsapp">
+        <a
+            href="https://api.whatsapp.com/send?phone=%20%20+916309505244%20&text=Hi%20Sir,%20Please%20share%20Me%20More%20Details%20about art and fitness"><img
+                src="./images/WhatsApp_icon.png.webp" alt="whatsapp"></a>
+    </div>
+    <!-- -----------------------------Head  section------------------------ -->
+    <div class="menu_bar">
+        <h1 class="logo">PALIYAM <span class="name">ENTERPRISES</span></h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <!----------------------dropdown lists will be starting here------------------------------------------>
+
+            <li><a href="#">Services <i class="fas fa-caret-down"></i></a>
+
+                <div class="dropdown_menu">
+                    <ul>
+                        <li><a href="./fmcg.html">FMCG<i class="fas fa-caret-right"></i></a>
+                            <div class="dropdown_menu-1">
+                                <ul>
+                                    <li><a href="#">Online</a></li>
+                                    <li><a href="#">Retail</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="./Arts&Fitness.html">Artsc & Fitness<i class="fas fa-caret-right"></i></a>
+                            <div class="dropdown_menu-2">
+                                <ul>
+                                    <li><a href="#">Online</a></li>
+                                    <li><a href="#">Offline</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="./technology.html">Technology<i class="fas fa-caret-right"></i></a>
+                            <div class="dropdown_menu-3">
+                                <ul>
+                                    <li><a href="#">Electric vehicle</a></li>
+                                    <li><a href="#">Web development</a></li>
+                                    <li><a href="#">Artificial Inteligence</a></li>
+                                    <li><a href="#">Embedded system</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="./careers.html">Recruitment<i class="fas fa-caret-right"></i></a>
+                            <div class="dropdown_menu-1">
+                                <ul>
+                                    <li>
+                                        <a href="./careers.html">IT-Recruitment</a>
+                                    </li>
+                                    <li>
+                                        <a href="./careers.html">NON-IT Recruitment</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <!----------------------dropdown lists will be Ending here------------------------------------------>
+            <li><a href="#about">AboutUs</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <!-- ----------------------------home section------------------------ -->
+
+    <section>
+        <div class="home-deatils">
+            <h3>Welcome To Paliyam Enterprises </h3>
+            <p>Transforming ideas into reality. Join us on the journey!</p>
+            <div class="container">
+                <div class="arrow"></div>
+                <div class="arrow"></div>
+                <div class="arrow"></div>
+                <div class="arrow"></div>
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------------service section------------------------ -->
+    <section class="service" id="service">
+        <h2 class="allheading">Our <span>Services</span></h2>
+        <div class="service-section">
+            <div class="service-box">
+                <h3>FMCG </h3>
+                <p>Fast-Moving Consumer Goods (FMCG) represent a category of products that are sold quickly at
+                    relatively low prices. These items, including food, toiletries, and cleaning products, are essential
+                    in daily life. FMCG is characterized by its
+                    high consumer demand, frequent replenishment, and affordable pricing, leading to a swift turnover in
+                    the market. </p>
+                <a href="./fmcg.html" class="btn">Read more</a>
+            </div>
+            <div class="service-box">
+                <h3> Arts And Fitness</h3>
+                <p>
+                    The arts, encompassing visual and performing expressions such as painting, dance, music, and
+                    literature, serve as a medium for creative exploration and cultural representation. Simultaneously,
+                    fitness involves maintaining physical and mental well-being
+                    through activities like cardiovascular workouts, strength training, and mindfulness practices. </p>
+                <a href="./Arts&Fitness.html" class="btn">Read more</a>
+            </div>
+            <div class="service-box">
+                <h3>Technologies</h3>
+                <p>
+                    Web development, artificial intelligence (AI), embedded systems, and electric vehicles (EVs)
+                    represent cutting-edge technologies. In web development, programmers create websites and
+                    applications, driving the digital landscape. AI involves the development
+                    of intelligent systems that mimic human cognitive functions, enhancing automation and
+                    decision-making processes. </p>
+                <a href="./technology.html" class="btn">Read more</a>
+            </div>
+            <div class="service-box">
+                <h3>Recruitment</h3>
+                <p>
+
+                    Recruitment is a pivotal function in both IT and non-IT sectors, involving the identification and
+                    hiring of skilled professionals. In the IT sector, the focus is on roles related to programming and
+                    technology, while the non-IT sector spans industries
+                    like finance, healthcare, and manufacturing. </p>
+                <a href="./careers.html" class="btn">Read more</a>
+            </div>
+        </div>
+    </section>
+    <!-----------------About section------------------------ -->
+    <section class="about" id="about">
+        <h2 class="allheading" id="about">About Us</h2>
+        <p class="fn">
+            Paliyam Enterprise is a versatile company excelling in the food business, FMCG, arts, school-related
+            activities, recruitment for MNCs, and software development. Renowned for its commitment to quality, the
+            company offers a diverse range of food products and consumer goods, catering to modern preferences. Actively
+            participating in the arts sector, Paliyam Enterprise supports local artists and sponsors cultural events,
+            contributing to a vibrant cultural landscape. In the realm of education, the company engages in
+            school-related activities, including sponsorships and infrastructure development, enhancing the overall
+            learning experience for students. A key player in recruitment, Paliyam Enterprise connects skilled
+            professionals with multinational companies, fostering growth for both job seekers and corporations.
+            Additionally, the company's technological arm excels in software development, providing innovative solutions
+            to meet the evolving needs of the digital age.</p>
+        <a href="#" class="btn">Read More</a>
+    </section>
+    <!-- ---------------------------contact form-------------------------------------------------------- -->
+    <p class="phead" id="contact">Contact us:</p>
+    <div class="form-container">
+
+        <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+            <input type="hidden" name="access_key" value="667e9c24-32c3-4515-98a7-139e6878c950">
+
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="mobileNumber">Mobile Number:</label>
+            <input type="tel" id="mobileNumber" name="mobileNumber" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit" onclick="reloadPage()">Submit</button>
+        </form>
+        </form>
+    </div>
+    <script>
+        function reloadPage() {
+            setTimeout(function () {
+                location.reload();
+            }, 1000); // Optional: Add a delay to ensure the form response is processed before reloading
+        }
+    </script>
+
+
+    <!-----------------Footer section------------------------ -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Address</h3>
+                <p>#78,Ground Floor,Annaiah Reddy building,<br>10th cross near sree rama Temple, <br>Maruthinagar main
+                    road Madiwala<br>Banglore, Karnataka<br>560068</p>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p>Email: info@example.com<br>Phone:+91-9972690022</p>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <p>Stay connected on social media</p>
+                <div class="social-media">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="license-section">
+        <p>&copy; 2024 paliyam. All rights reserved. | Licensed under the .... License</p>
+    </div>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script src="./script.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</body>
+
+</html>
+
+</html>

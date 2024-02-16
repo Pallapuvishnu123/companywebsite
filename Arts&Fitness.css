@@ -1,0 +1,725 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.marquee{
+    font-size:20px;
+    font-weight: 700;
+    font-style:italic;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+.menu_bar {
+    background-color: rgb(53, 54, 54);
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    color: white;
+    font-size: 24px; 
+}
+.logo span {
+    color: rgb(120, 120, 222);
+	margin: 0 auto;
+  	text-shadow: 0 0 80px rgba(120, 120, 222);
+}
+.logo{
+
+    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+      /* Animate Background Image */
+
+	  -webkit-text-fill-color:transparent;
+	  -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+	  -webkit-transform: translate3d(0,0,0);
+	  -webkit-backface-visibility: hidden;
+
+}
+
+
+/* Animate Background Image */
+
+    @-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+
+.menu_bar ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu_bar ul li {
+    padding: 10px;
+    position: relative;
+}
+
+.menu_bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+
+.menu_bar ul li a:hover {
+    color: rgb(82, 82, 136);
+}
+
+.dropdown_menu {
+    display: none;
+}
+
+.menu_bar ul li:hover .dropdown_menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: rgb(53, 54, 54);
+}
+
+.dropdown_menu ul {
+    display: block;
+    margin: 10px;
+}
+
+.dropdown_menu ul li {
+    width: 150px;
+    padding: 8px;
+}
+
+.fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+.dropdown_menu-1,
+.dropdown_menu-2,
+.dropdown_menu-3 {
+    display: none;
+}
+
+
+/* ---------------------------responsive code for nav bar section------------------------------------ */
+
+@media screen and (max-width: 480px) {
+    .menu_bar {
+        padding: 0 3%;
+    }
+    .logo {
+        font-size: 20px;
+    }
+    .menu_bar ul li {
+        padding: 8px;
+    }
+    .menu_bar ul li a {
+        font-size: 14px;
+    }
+    .dropdown_menu ul li {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+    .menu_bar ul li {
+        padding: 10px 15px;
+    }
+    .menu_bar ul li a {
+        font-size: 18px;
+    }
+    .dropdown_menu ul li {
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .menu_bar ul li {
+        padding: 10px 30px;
+    }
+    .menu_bar ul li a {
+        font-size: 20px;
+    }
+}
+
+
+
+/* home Section */
+
+.home-deatils {
+    text-align: center;
+    background-image: url('./images/Arts & Fitness bg.jpg');
+    background-size: cover;
+    color: #000000;
+    height: 400px;
+    background-origin: border-box;
+    animation: fadeIn 1s ease-out forwards; 
+}
+
+.home-deatils h3 {
+    align-items: center;
+    padding-top: 50px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.fullform {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+/* ---------------------------responsive code for home section------------------------------------ */
+@media (max-width: 350px) {
+    .home-details {
+        padding: 30px 10px;
+        background-size: contain; 
+    }
+
+    .home-details h3 {
+        font-size: 28px;
+    }
+
+    .fullform {
+        font-size: 16px;
+    }
+}
+
+/* Media query for tablets and larger devices */
+@media (min-width: 768px) {
+    .home-details {
+        padding: 100px 50px;
+        background-size: contain; 
+    }
+
+    .fullform {
+        font-size: 24px;
+    }
+}
+
+/* Media query for desktops and larger devices */
+@media (min-width: 992px) {
+    .home-details {
+        padding: 150px 100px;
+    }
+
+    .fullform {
+        font-size: 30px;
+    }
+}
+/* container - 1 start */
+
+.container-1 {
+    height: 85vh;
+    width: 98vw;
+    animation: slideUp 1s ease-out forwards;
+    /* margin-top: 30px; */
+}
+
+.child1 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.child11{
+    justify-content: space-evenly;
+    
+}
+
+.child11,
+.child12 {
+    height: 80%;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    border-radius: 15px;
+    margin:0;
+    box-shadow: 0px 0px 5px 1px black;
+}
+
+.child12 {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+.images {
+    height: 98%;
+    width: 120px;
+   border-radius: 10%;
+}
+
+.images1 {
+    height: 98%;
+    width: 120px;
+    border-radius: 5px;
+}
+
+.images2 {
+    height: 98%;
+    width: 98px;
+    border-radius: 5px;
+}
+
+.bharatanatyam,
+.bollywood,
+.hip-hop {
+    height: 25%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(243, 236, 229, 0.388);
+    box-shadow: 0px 0px 5px 1px black;
+    border-radius: 15px;
+    flex-wrap: wrap;
+}
+
+.fitness {
+    height: 90%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+i {
+    font-size: 14px;
+    padding: 0px 5px;
+}
+
+.yoga,
+.Zumba,
+.Aerobics,
+.Bokwa,
+.MartialArts {
+    width: 45%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgba(243, 236, 229, 0.388);
+    box-shadow: 0px 0px 5px 1px black;
+    border-radius: 15px;
+}
+
+.links {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(17, 17, 58);
+}
+.links2,.links1 {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(17, 17, 58);
+}
+.child-title {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* container-2 start */
+
+.container-2 {
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.child2,
+.child3 {
+    width: 48%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 5px 1px black;
+    border-radius: 15px;
+}
+
+.child2 {
+    flex-direction: row;
+}
+
+.child3 {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.instruments {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.text-aligning1{
+    text-decoration: none;
+    color: #000;
+}
+
+.Veena,
+.Violin,
+.Keyboard,
+.Guitar,
+.Drums,
+.Tabla,
+.Flute,
+.Mridangam {
+    width: 40%;
+    height: 19%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:  rgba(243, 236, 229, 0.388);;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 1px black;
+}
+
+.child31,
+.child32 {
+    width: 90%;
+    height: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    background-color:  rgba(243, 236, 229, 0.388);
+}
+
+.music {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Vocal,
+.Carnatic,
+.Hindustani,
+.Western {
+    height: 45%;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(243, 236, 229, 0.388);;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 1px black;
+    flex-wrap: nowrap;
+    text-decoration: none;
+}
+
+.musicArts-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+/* ------------------footer section---------------------- */
+
+.footer {
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-column {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    color: #ffcc00;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-column {
+        width: 100%;
+    }
+}
+
+.license-section {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.social-media a {
+    display: inline-flex;
+    width:35px;
+    height: 35px;
+    border-radius: 50%;
+    color: #d1d9db;
+    font-size: 30px;
+    border: 2px solid #d9d9d9;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    transition: .5s ease;
+}
+
+.social-media a:hover,
+.social-media a.active {
+    background: #6a6a687a;
+    color: #000;
+    box-shadow: 0 0 20px #c6cbcd;
+}
+/* ---------------------------animation code for Footer section------------------------------------ */
+.footer-column {
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-column:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* footer End*/
+
+
+/* media queries */
+
+@media screen and (min-width:350px) and (max-width:1050px) {
+    body {
+        font-family: sans-serif;
+        height: 230vh;
+        width: 100%;
+    }
+    .container-1 {
+        height: 140vh;
+        width: 98vw;
+        /* margin-top: 30px; */
+    }
+    .child1 {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .child11,
+    .child12 {
+        width: 90%;
+        height: 48%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .images1 {
+        height: 84%;
+        width: 100px;
+        border-radius: 5px;
+    }
+    .images2 {
+        height: 98%;
+        width: 80px;
+        border-radius: 5px;
+    }
+    .child12 {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .bharatanatyam,
+    .bollywood,
+    .hip-hop {
+        height: 22%;
+        width: 80%;
+        background-color:  rgba(243, 236, 229, 0.388);;
+        border: 1px solid;
+    }
+    .container-2 {
+        height: 190vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .child2,
+    .child3 {
+        width: 90%;
+        height: 30%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-shadow: 0px 0px 5px 1px black;
+        border-radius: 15px;
+    }
+    .child2 {
+        flex-direction: row;
+        width:700px;
+        /* height: 60%; */
+    }
+    .child3 {
+        height: 65%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .instruments {
+        width: 450px;
+        height:350px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .Veena,
+    .Violin,
+    .Keyboard,
+    .Guitar,
+    .Drums,
+    .Tabla,
+    .Flute,
+    .Mridangam {
+        width: 40%;
+        height: 19%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: rgba(243, 236, 229, 0.388);
+        border-radius: 15px;
+        box-shadow: 0px 0px 5px 1px black;
+    }
+    .child31,
+    .child32 {
+        width: 90%;
+        height: 48%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 15px;
+        background-color: rgba(243, 236, 229, 0.388);
+    }
+    .music {
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .Vocal,
+    .Carnatic,
+    .Hindustani,
+    .Western {
+        height: 45%;
+        width: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: rgba(243, 236, 229, 0.388);
+        border-radius: 15px;
+        box-shadow: 0px 0px 5px 1px black;
+        flex-direction: column;
+    }
+    .musicArts-title {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .text-aligning{
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+@media screen and (min-width:350px) and (max-width:1050px) {
+    .images2 {
+        height: 50px;
+        width: 80px;
+    }
+    .images3{
+        height: 120px;
+        width: 120px;
+    }
+    .text-aligning1{
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+@media screen and (min-width:350px) and (max-width:415px) {
+    .text-aligning1 {
+        font-size: 9px;
+        font-weight: 200;
+    }
+    .links1 {
+        text-decoration: none;
+        color: rgb(17, 17, 58);
+        font-size: 10px;
+        font-weight: 700;
+    }
+    .links2 {
+        text-decoration: none;
+        color: rgb(17, 17, 58);
+        font-size: 16px;
+        font-weight: 500;
+        font-style:sans-serif;
+        }
+        .text-aligning1{
+            text-decoration: none;
+            color: #000;
+        }
+}
+
+
+/* media queries end */

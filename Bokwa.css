@@ -1,0 +1,325 @@
+body {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgba(141, 139, 139, 0.237);
+}
+
+.head {
+    display: inline-block;
+    background-image: url("./images/bokwa\ background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+    padding: 10px;
+}
+
+.head img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.image {
+    display: block;
+    padding-left: 50px;
+    float: left;
+    margin: 0 auto;
+}
+
+.tittle {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.tittle1 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    float: left;
+}
+
+.btn,
+.btn a {
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 992px) {
+    .head {
+        height: 300px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .head img {
+        width: 100px;
+    }
+
+    .tittle {
+        font-size: 36px;
+    }
+
+    .tittle1 {
+        font-size: 30px;
+        margin-left: 50px;
+    }
+}
+
+/* --------------------carsouel section--------------------------- */
+section {
+    padding: 5px;
+}
+
+/* --------------------------------------about section------------------ */
+.about-section {
+    margin-top: 10px;
+    display: flex;
+    margin-left: 30px;
+    background-color: #ffffff;
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px black;
+}
+
+.about-section h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* ------------------------------responsive code for about section--------------- */
+
+@media only screen and (min-width: 350px) {
+    .about-section {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .about-section {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+/* ------------------------------------timings section--------------------------- */
+.classinformation {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.timings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.instructor-img {
+    height: 180px;
+    /* border-radius: 50%; */
+    margin-bottom: 10px;
+}
+
+.times {
+    width: 100%;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 15px;
+
+}
+/* Responsive styling for mobile devices */
+@media screen and (max-width: 600px) {
+    .card {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .times {
+        font-size: 16px;
+    }
+}
+
+
+/* --------------------------------------information  section------------------ */
+.information {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.ourprogrames {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.info-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px rgb(58, 57, 57);
+    display: flex;
+    width: 40%;
+    margin: 10px;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.info-box i {
+    font-size: 60px;
+}
+
+.info-box img {
+    max-width: 30%;
+    height: 130px;
+    display: block;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .info-box {
+        width: 90%;
+    }
+}
+/* ---------------------------testmonial section --------------------------- */
+.testmonials{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f6f6;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 1px rgb(11, 11, 11);
+}
+
+
+.testimonial-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-between;
+  }
+  
+  .testimonial-box {
+    text-align: center;
+    /* border: 2px solid #000; */
+    /* padding: 20px; */
+    /* flex: 1; */
+    max-width: 300px; /* Optional: Set a max-width to limit box width */
+  }
+  
+  .testimonial-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  
+  .testimonial-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .rating-timestamp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  
+  .star-rating {
+    color: #fdd835;
+    font-size: 16px;
+  }
+  
+  .timestamp {
+    font-size: 12px;
+    color: #777; /* Adjust color as needed */
+  }
+  
+  .testimonial-box p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-name {
+    color: #4c9489;
+    font-weight: bold;
+  }
+
+/* ------------------gallery section---------------------- */
+.photos {
+    padding: 20px;
+    background-color: #f4f4f4;
+
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery-item {
+    width: 20%;
+    height:80%;
+    margin: 10px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ------------------------------contact information------------- */
+#contact {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 40%;
+    align-items: center;
+    margin-left: 29%;
+    box-shadow: 0px 0px 5px 1px rgb(59, 59, 59);
+}
+
+@media only screen and (max-width: 768px) {
+    #contact {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
