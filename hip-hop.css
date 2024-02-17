@@ -76,6 +76,18 @@ body {
 section {
     padding: 5px;
 }
+@media (max-width: 768px) {
+    .carousel-inner {
+        height: 40vh !important;
+    }
+}
+
+/* Adjust height for smaller screens */
+@media (max-width: 576px) {
+    .carousel-inner {
+        height: 30vh !important;
+    }
+}
 
 /* --------------------------------------about section------------------ */
 .about-section {
@@ -218,6 +230,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    height: 500px;
 }
 
 .gallery-item {
@@ -302,6 +315,21 @@ section {
     color: #4c9489;
     font-weight: bold;
   }
+  /* Responsive styles for smaller screens */
+@media only screen and (max-width: 768px) {
+    .testimonial-flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: 200px;
+        width: auto;
+    }
+    
+}
 /* ------------------------------contact information------------- */
 #contact {
     background-color: #ffffff;
