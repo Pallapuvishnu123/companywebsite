@@ -83,7 +83,7 @@ section {
 /* Adjust height for smaller screens */
 @media (max-width: 576px) {
     .carousel-inner {
-        height: 30vh !important;
+        height: 25vh !important;
     }
     
 }
