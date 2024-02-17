@@ -207,6 +207,14 @@ nav {
     .times {
         font-size: 16px;
     }
+    .gallery-item {
+        width: 30%; /* Adjust as needed for spacing */
+        margin: 3px;
+        /* overflow: hidden; */
+        /* border: 1px solid #ccc; */
+        border-radius: 8px;
+        height: 120px;
+    }
 }
 /* ---------------------------testmonial section --------------------------- */
 .testmonials{
@@ -291,7 +299,14 @@ nav {
     align-items: center;
     margin-left: 32%;
 }
-/* Responsive code for screens up to 350px */
+/* Media query for screens up to 500px */
+@media only screen and (max-width: 500px) {
+    #contact {
+      width: 90%; /* Adjust the width for smaller screens */
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 @media (max-width: 350px) {
     .head1 {
         margin-left: 25%;
@@ -302,6 +317,5 @@ nav {
         width: 100%;
         height: auto;
         margin-bottom: 20px;
-    }
+    }  
 }
-
