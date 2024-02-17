@@ -76,7 +76,7 @@ section {
 /* Adjust height for medium screens */
 @media (max-width: 768px) {
     .carousel-inner {
-        height: 30vh !important;
+        height: 33vh !important;
     }
 }
 
@@ -85,7 +85,13 @@ section {
     .carousel-inner {
         height: 30vh !important;
     }
+    
 }
+@media only screen and (max-width: 300px) {
+    .carousel-inner {
+      height: 20vh !important;
+    }
+  }
 
 
 /* --------------------------------------about section------------------ */
