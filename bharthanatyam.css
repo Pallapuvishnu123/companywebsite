@@ -87,7 +87,7 @@ section {
     }
     
 }
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 400px) {
     .carousel-inner {
       height: 20vh !important;
     }
